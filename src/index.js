@@ -1,9 +1,9 @@
 require('dotenv').config();
 
-import express from 'express';
-import bodyParser from 'body-parser';
+const express = require('express');
+const bodyParser = require('body-parser');
 
-import { postMessage } from './post';
+const post = require('./post');
 
 const app = express();
 const PORT = process.env.PORT;
@@ -30,9 +30,9 @@ app.post('/action-handler', (req, res) => {
   }
 
   if (user === NIKKI_ID) {
-    postMessage(`hello, nikki.`, 'test-nikki-bot', res);
+    post.postMessage(`hello, nikki.`, 'test-nikki-bot', res);
   } else {
-    postMessage(`hello, jasper.`, 'test-nikki-bot', res);
+    post.postMessage(`hello, jasper.`, 'test-nikki-bot', res);
   }
 
 });
