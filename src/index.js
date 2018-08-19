@@ -21,6 +21,7 @@ app.post('/action-handler', (req, res) => {
     res.send(req.body.challenge);
     return;
   }
+  console.log(req.body);
 
   const { text, channel, bot_id, user } = req.body.event;
   // Ignore messages from self (bot)
