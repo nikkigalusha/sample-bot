@@ -34,3 +34,8 @@ Edit the file to add slack tokens and bot ids
 yarn start
 ```
 
+For automatic restarts
+```
+yarn nodemon
+```
+

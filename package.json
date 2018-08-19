@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node src/index.js",
-    "start-better": "nodemon src/index.js --exec babel-node"
+    "nodemon": "nodemon src/index.js --exec babel-node"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
