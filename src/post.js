@@ -11,7 +11,7 @@ export function postMessage(text, channel, res) {
     body: {
       channel,
       as_user: false,
-      icon_emoji: ':robot_face:',
+      icon_emoji: ':cat:',
       text,
     },
     json: true,
